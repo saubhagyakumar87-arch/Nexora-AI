@@ -207,7 +207,7 @@ function ChatWindow({ onMenuClick }) {
 
         try {
             const response = await fetch(
-                "http://localhost:8080/api/image",
+                `${import.meta.env.VITE_API_URL}/api/image`,
                 {
                     method: "POST",
                     headers: {
